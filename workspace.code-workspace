@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\Random C & C++"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ostream": "cpp",
+			"array": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}
