@@ -23,9 +23,8 @@ void Max_heapify(int *arr,int given_parent_index,int n)
     if(parent_index != given_parent_index)
     {
         swap(arr[given_parent_index],arr[parent_index]); 
-        Max_heapify(arr,parent_index,n); // recursive call will come into play when the index is less than n/2 i.e for smaller index it will balance the rest of heap
+        Max_heapify(arr,parent_index,n); // recursive call will come into play when the givenparentIndex is changed and from their it will balance the rest of the heap from top to bottom
     }
-
 }
 
 int main()
