@@ -52,7 +52,7 @@ class graph
 
                 if(Lowest_DiscoveryTime[futureNode] >= DiscoveryTime[srcNode] && parent != -1)
                 {
-                    ans.push_back(srcNode);
+                    ans[srcNode] = 1;
                 }
             }
 
@@ -62,13 +62,13 @@ class graph
             }
         }
 
-        if(parent == -1 && child > 0)
-            ans.push_back(srcNode);
+        if(parent == -1 && child > 1)
+            ans[srcNode] = 1;
     }
 
     vector<int> Find_Articulation_Point()
     {
-        vector<int>ans;
+        vector<int>ans(adj.size(),0);
 
         vector<int>DiscoveryTime(adj.size(),-1);
         vector<int>Lowest_DiscoveryTime(adj.size(),-1);
@@ -101,14 +101,12 @@ int main()
     g.add(3,5);
     g.add(5,4);
 
-    // g.print();
-
     vector<int> ans = g.Find_Articulation_Point();
 
-   
-    for(auto i : ans)
+    for(int i = 0 ; i  < ans.size() ; i++)
     {
-        cout << i <<" ";
+        if(ans[i] == 1)   
+            cout << i <<" ";
     }
     return 0;
 }
