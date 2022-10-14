@@ -54,24 +54,48 @@ class graph
 int main()
 {
     graph g;
-    g.add(0,1,2);
-    g.add(0,3,6);
+    // g.add(0,1,2);
+    // g.add(0,3,6);
 
-    g.add(1,0,2);
-    g.add(1,3,8);
-    g.add(1,4,5);
-    g.add(1,2,3);
+    // g.add(1,0,2);
+    // g.add(1,3,8);
+    // g.add(1,4,5);
+    // g.add(1,2,3);
 
-    g.add(2,1,3);
-    g.add(2,4,7);
+    // g.add(2,1,3);
+    // g.add(2,4,7);
 
-    g.add(3,0,6);
-    g.add(3,1,8);
+    // g.add(3,0,6);
+    // g.add(3,1,8);
 
-    g.add(4,1,5);
-    g.add(4,2,7);
+    // g.add(4,1,5);
+    // g.add(4,2,7);
 
-    int srcNode = 0;
+    g.add(0,1,5);
+    g.add(0,2,3);
+
+    g.add(1,0,5);
+    g.add(1,3,6);
+    g.add(1,2,2);
+
+    g.add(2,0,3);
+    g.add(2,1,2);
+    g.add(2,3,7);
+    g.add(2,4,4);
+    g.add(2,5,2);
+
+    g.add(3,1,6);
+    g.add(3,2,7);
+    g.add(3,4,-1);
+
+    g.add(4,3,-1);
+    g.add(4,2,4);
+    g.add(4,5,-2);
+    
+    g.add(5,4,-2);
+    g.add(5,2,2);
+
+    int srcNode = 2;
     unordered_map<int,int>parent = g.shortest(3);
     
     for(int i = 0 ; i  < parent.size() ; i++)

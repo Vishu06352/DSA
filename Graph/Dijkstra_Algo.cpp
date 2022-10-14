@@ -64,28 +64,27 @@ int main()
     g.add(0,2,1);
     g.add(0,3,2);
 
-    g.add(1,0,7);
     g.add(1,2,3);
     g.add(1,3,5);
     g.add(1,4,1);
 
-    g.add(2,0,1);
-    g.add(2,1,3);
+    // g.add(2,0,1);
+    // g.add(2,1,3);
 
-    g.add(3,0,2);
-    g.add(3,1,5);
+    // g.add(3,0,2);
+    // g.add(3,1,5);
     g.add(3,4,7);
 
-    g.add(4,1,1);
-    g.add(4,3,7);
+    // g.add(4,1,1);
+    // g.add(4,3,7);
 
-    int srcNode = 3;
+    int srcNode = 2;
     vector<int>ans = g.shortestPath(srcNode);
 
     for(auto i : ans)
     {
         cout << i <<" ";
     }
-    
+    // t.c -> o(v^2) and s.c -> o(v+e)
     return 0;
 }
