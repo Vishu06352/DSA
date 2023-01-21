@@ -90,6 +90,7 @@ public:
 
 int main()
 {
+    // 40 50 60 30 20 55 70
     heap h;
     h.insertion();
     // h.print();
@@ -99,6 +100,12 @@ int main()
     // h.print();
     h.insertion();
     // h.print();
+    h.insertion();
+    h.print();
+
+    h.insertion();
+    h.print();
+
     h.insertion();
     h.print();
 

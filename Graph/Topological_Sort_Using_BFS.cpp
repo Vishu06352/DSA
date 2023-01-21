@@ -34,7 +34,12 @@ class graph
     {
         visited[srcNode] = true;
         queue<int>q;
-        q.push(srcNode);
+        
+        for(auto i : inDegree)
+        {
+            if(i.second == 0)
+            q.push(i.first);
+        }
 
         while(!q.empty())
         {

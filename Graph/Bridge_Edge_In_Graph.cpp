@@ -88,14 +88,20 @@ class graph
 int main()
 {
     graph g;
-    g.add(0,1);
-    g.add(0,2);
-    g.add(1,2);
-    g.add(1,6);
+    // g.add(0,1);
+    // g.add(0,2);
+    // g.add(1,2);
+    // g.add(1,6);
+    // g.add(1,3);
+    // g.add(1,4);
+    // g.add(3,5);
+    // g.add(5,4);
+
     g.add(1,3);
-    g.add(1,4);
-    g.add(3,5);
-    g.add(5,4);
+    g.add(1,2);
+    g.add(1,0);
+    g.add(2,0);
+
 
     // g.print();
 
